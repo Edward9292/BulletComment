@@ -1,7 +1,7 @@
 # BulletComment - JavaScript Library 
 
 ## Getting started
-### Scripts they need to include in their webpage.
+### Scripts they need to include in the webpage.
 <script src="/path/to/BulletComment.js"></script>
 
 ### Creating the object. Set idOfDOM be a string representing the id of the DOMScope that wants to display the effect.
