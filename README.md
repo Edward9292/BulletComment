@@ -1,4 +1,4 @@
-# js-library-linpao
+# BulletComment - JavaScript Library 
 
 ## Getting started
 ### Scripts they need to include in their webpage.
