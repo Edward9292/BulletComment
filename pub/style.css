@@ -1,12 +1,16 @@
+h1{
+	text-align: center;
+	color:rgb(0, 0, 0)
+}
 #wrapper {
-	height: 500px;
+	height: 300px;
 	position: relative;
 	overflow: hidden;
 	color:cornflowerblue;
 	font-size: 30px;
 }
 #wrapper2 {
-	height: 200px;
+	height: 100px;
 	position: relative;
 	overflow: hidden;
 	color:rgb(235, 57, 101);
@@ -20,11 +24,11 @@
 	font-size: 50px;
 }
 #sendText{
-	padding-left: 700px;
-	padding-bottom: 100px;
+	padding-left: 500px;
+	padding-bottom: 10px;
 }
 #buttonAction{
-	padding-left: 750px;
+	padding-left: 500px;
 }
 #textbullet{
 

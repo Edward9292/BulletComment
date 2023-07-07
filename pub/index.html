@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+	<h1>BulletComment library example </h1>
 	<div id="wrapper2"></div>
 	<div id="wrapper"></div>
 	<div id="wrapper3"></div>
@@ -28,8 +29,8 @@
 			MAX_COL: 1,
 			MAX_ROW: 1
 		})
-		let comment2 = "<strong>Try typing something below and click Send Text !!</strong>";
-		let comment3 = "<strong>BulletComment are also allow user to send image and link</sgrong>"
+		let comment2 = "<strong>Please type something below and click \"Send Text\"!</strong>";
+		let comment3 = "<strong>BulletComment allows users to send images and links as well</sgrong>"
 		bc3.start();
 		bc3.keepSending(comment2);
 		bc3.keepSending(comment3);
@@ -54,7 +55,7 @@
 		let sendDog = document.getElementById('dogButton');
 		let input = document.getElementById('inputField');
 		let linkButton= document.getElementById('linkButton');
-		let link = "<a href='https://idpz.utorauth.utoronto.ca/' id = 'textbullet'>Link to UofT</a>"
+		let link = "<a href='https://github.com/Edward9292/BulletComment' id = 'textbullet'>Link to GitHub</a>"
 		sendtext.addEventListener('click', () => {
 			input.value = input.value.trim();
 			curr_text = `<a id = 'textbullet'>${input.value}</a>`;
