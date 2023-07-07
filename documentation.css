@@ -1,0 +1,11 @@
+body {
+	background-color: #aedfff;
+    margin: 0;
+    margin-left: 100px;
+}
+
+pre {
+    background-color: rgb(147, 253, 183);
+    margin-right: 20%;
+    border: solid 1px black;
+}
