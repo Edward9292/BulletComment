@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="documentation.css">
+    <title>bulletcomment.js documentation</title>
+ </head>
+<body>
+    <h1>bulletcomment.js</h1>
+    <h2>docmumentation</h1>
+    <div>
+        <pre>
+        BulletComment is a library that allow user to let DOM object (image, text, link, etc) floating around
+        on the webpage. Can be use to display the information, news , add, or even use this library to build 
+        barrage on the webpage.
+        </pre>
+    </div>
+    <h2>Getting Started</h2>
+    <p>Scripts that need to be included in the webpage.</p>
+    <pre>
+        &lt;script src='bulletcomment.js'&gt;&lt;/script&gt;
+    </pre>
+    <p>Create the BulletComment object</p>
+    <p>Set idOfDOM be a string representing the id of the DOMScope that wants to display the effect.</p>
+    <pre>
+        let bc = new BulletComment(idOfDOM);
+    </pre>
+    <p>User can have an options to set the values of BulletComment</p>
+    <p>MAX_COL represent the maximum number of item can be exits in a same time in a row</p>
+    <p>MAX_ROW represent the maximum number of row can be exits in a same time</p>
+    <pre>
+        options = {
+            MAX_COL: 3,
+            MAX_ROW: 2
+        }
+        let bc = new BulletComment(idOfDOM, options);
+    </pre>
+    <p>Start displaying comments.</p>
+    <pre>
+        bc.start();
+    </pre>
+
+    <h2>APIs</h2>
+        <h3>.start()</h3>
+            <p>Start displaying the comments/items from queue</p>
+            <pre>
+                let bc = new BulletComment(idOfDOM, options);
+                bc.start();
+            </pre>
+        <h3>.send(DOM_object)</h3>
+            <p>Send the DOM_object into the queue and wait for displaying</p>
+            <pre>
+                let comment = "<a>Hello</a>";
+                bc.send(comment);
+            </pre>
+        <h3>.keepSending(DOM_object)</h3>
+            <p>Keep sending the DOM_object into the queue</p>
+            <pre>
+                let comment = "<a>Hello</a>";
+                bc.keepSending(comment);
+            </pre>
+            <p>Also, user have an option to set the time interval between two item been sended</p>
+            <p>The default value is 1000 (1 sec)</p>
+            <pre>
+                let comment = "<a>Hello</a>";
+                let timeInterval = 3000;
+                bc.keepSending(comment, timeInterval);
+            </pre>
+        <h3>.clear()</h3>
+            <p>Cleaer the queue of the BulletComment object</p>
+            <pre>
+                bc.clear();
+            </pre>
+</body>
+    
+</html>
